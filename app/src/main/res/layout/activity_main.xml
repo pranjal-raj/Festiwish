@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagelist"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vignette"
+        android:paddingTop="10dp"
+        android:text="Festiwish"
+        android:fontFamily="@font/samarakan"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="Hello There !!"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pick The Festival You want to Send Wishes for "
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ScrollView
+            android:layout_width="391dp"
+            android:layout_height="620dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:fontFamily="@font/andika_new_basic_italic"
+                        android:text="Holi is the festival of\ncolors.What is the importance of Holi?
+Image result for brief not on holi
+Holi celebrates the arrival of spring, the end of winter, the blossoming of love and for many."
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/holi_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="200dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/holi_img"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/holi" />
+
+                            <TextView
+                                android:id="@+id/holi_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:fontFamily="@font/samarakan"
+                                android:text="Holi"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.504"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/holi_img" />
+
+                            <LinearLayout
+                                android:id="@+id/holi_opt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/holi_title">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.holi.text"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:elevation="200dp"
+                                    android:text="Text"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.holi.text.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Send A Personalized Message"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.holi.image"
+                                    android:layout_width="69dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:padding="-4dp"
+                                    android:text="Image"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.holi.inmage.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Wishing Image"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.holi.fun"
+                                    android:layout_width="72dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:text="Fun Fact"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Fun Fact with a Wish"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/indep_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="200dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/indep_img"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/indep" />
+
+                            <TextView
+                                android:id="@+id/indep_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/samarakan"
+                                android:text="independence day"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/indep_img" />
+
+                            <LinearLayout
+                                android:id="@+id/indep_opt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/indep_title">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.indep.text"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:elevation="200dp"
+                                    android:text="Text"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.indep.text.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Send A Personalized Message"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.indep.image"
+                                    android:layout_width="69dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:padding="-4dp"
+                                    android:text="Image"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.indep.inmage.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Wishing Image"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.indep.fun"
+                                    android:layout_width="72dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:text="Fun Fact"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/andika_new_basic_italic"
+                        android:text="Independence Day commemorates the valour and spirit of the freedom fighters who foughtfor the independence of the nation from British rule. The day is recognised as that of national pride and honour."
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/andika_new_basic_italic"
+                        android:text="Dusshera marks the victory of Ram over Ravana, the demon king and thus signifying the victory of good over evil. It is celebrated with great enthusiasm and vigor in different parts of the country."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Dusshera_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="200dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/Dusshera_img"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/dusshera"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/Dusshera_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:fontFamily="@font/samarakan"
+                                android:text="Dusshera"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/Dusshera_img" />
+
+                            <LinearLayout
+                                android:id="@+id/Dusshera_opt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/Dusshera_title">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Dusshera.text"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:elevation="200dp"
+                                    android:text="Text"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Dusshera.text.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Send A Personalized Message"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Dusshera.image"
+                                    android:layout_width="69dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:padding="-4dp"
+                                    android:text="Image"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Dusshera.inmage.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Wishing Image"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Dusshera.fun"
+                                    android:layout_width="72dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:text="Fun Fact"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Fun Fact with a Wish"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Diwali_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="200dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/Diwali_img"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/diwali" />
+
+                            <TextView
+                                android:id="@+id/Diwali_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/samarakan"
+                                android:text="Diwali"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/Diwali_img" />
+
+                            <LinearLayout
+                                android:id="@+id/Diwali_opt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/Diwali_title">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Diwali.text"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:elevation="200dp"
+                                    android:text="Text"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Diwali.text.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Send A Personalized Message"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Diwali.image"
+                                    android:layout_width="69dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:padding="-4dp"
+                                    android:text="Image"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Diwali.inmage.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Wishing Image"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Diwali.fun"
+                                    android:layout_width="72dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:text="Fun Fact"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Fun Fact with a Wish"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/andika_new_basic_italic"
+                        android:text="Diwali is the Festival of Light and  Diwali, which for some also coincides with harvest and new year celebrations, is a festival of new beginnings and the triumph of good over evil and light over darkness."
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    android:layout_marginBottom="25dp">
+
+                    <TextView
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/andika_new_basic_italic"
+                        android:text="Christmas is a colorful festival, likewise most festivals in India. It is noted for its brightness, as local stores, markets and malls have multi-colored decorations. "
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Christmas_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="200dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/Christmas_img"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/christmas" />
+
+                            <TextView
+                                android:id="@+id/Christmas_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:fontFamily="@font/samarakan"
+                                android:text="Christmas"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/Christmas_img" />
+
+                            <LinearLayout
+                                android:id="@+id/Christmas_opt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:animateLayoutChanges="true"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/Christmas_title">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Christmas.text"
+                                    android:layout_width="60dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:elevation="200dp"
+                                    android:text="Text"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Christmas.text.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Send A Personalized Message"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Christmas.image"
+                                    android:layout_width="69dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:padding="-4dp"
+                                    android:text="Image"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/b.Christmas.inmage.tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Wishing Image"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/b.Christmas.fun"
+                                    android:layout_width="72dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button"
+                                    android:text="Fun Fact"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:elevation="200dp"
+                                    android:text="Send A Fun Fact with a Wish"
+                                    android:textColor="#131313"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

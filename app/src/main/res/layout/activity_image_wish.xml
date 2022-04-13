@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageWishActivity"
+    android:background="@drawable/bg_act3">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:paddingTop="10dp"
+        android:text="Festiwish"
+        android:fontFamily="@font/samarakan"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bree_serif"
+        android:text="Good Choice !!"
+        android:textColor="#ffffff"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sometimes images give more meaning\nto feelings than words."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/diwali1"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/diwali1_img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/diwali1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/diwali2"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/diwali2img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/diwali2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/diwali3"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/diwali3img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/diwali3" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- INdep-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/indep1"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/indep1img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/indep1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/indep2"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/indep2img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/indep2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+
+                android:id="@+id/indep3"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/indep3img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/indep3" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Holi -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/holi1"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/holi1img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/holiimg1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/holi2"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/holi2img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/holiimg2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/holi3"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/holi3img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/diwali3" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Dusshera-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dus1"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/dus1img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/dusimg1"
+                         />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dus2"
+
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/dus2img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/dusimg2"
+                         />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dus3"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/dus3img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/dusimg3"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Christmas-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Christmas1"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Christmas1img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/christmasimg1"
+                         />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Christmas2"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Christmas2img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/christmasimg2"
+                       />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Christmas3"
+
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#9CFFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2000dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Christmas3img"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:src="@drawable/christmasimg3"
+                         />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/sub_text"
+        app:layout_constraintTop_toBottomOf="@+id/sub_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button0"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="0sp"
+        android:textStyle="italic"
+        android:textColor="#D5D2D2"
+        android:text="Add you name here to send a personalised message"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
